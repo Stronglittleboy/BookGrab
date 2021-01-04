@@ -11,18 +11,14 @@ import java.io.InputStreamReader;
  * @create: 2019-05-03 16:31
  **/
 public class DownUtils {
-
     public static void main(String[] args) {
-        long i = System.currentTimeMillis();
-        boolean b = downloadPicture(
-                "https://www.baidu.com/img/bd_logo1.png",
-                "D:/curltest.jpg");
-        System.out.println("下载是否成功：" + b + "\t使用时间" + (System.currentTimeMillis() - i) + "ms");
+
     }
+
 
     public static boolean downloadPicture(String imgURL, String target) {
         String[] cmds = { //
-                "D:\\workHolder\\tool\\curl-7.64.1_1-win64-mingw\\curl-7.64.1-win64-mingw\\bin\\curl", //
+                "curl", //
                 "-o", //把下载的数据保存到指定的文件中,这里是target（小写o）
                 target, //
                 imgURL, //需要下载的URI网址

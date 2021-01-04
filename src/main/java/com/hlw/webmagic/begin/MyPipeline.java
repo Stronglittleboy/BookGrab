@@ -59,7 +59,7 @@ public class MyPipeline implements Pipeline {
         return deleteCRLFOnce(input);
     }
     public void writeFileToSave(String str){
-        File file = new File("D:\\studyProject\\BookGrab\\src\\main\\resources\\my.txt");
+        File file = new File("D:\\ceshi.html");
         FileWriter fw=null;
         BufferedWriter bw=null;
         try {
